@@ -6,9 +6,19 @@
 
 ### Section A: setup a hadoop cluster with 3 nodes 
 
-#####1. pull docker image
+#####1. install the docker and pull docker image
 
 ```
+sudo apt-get update
+sudo apt-get install git -y
+sudo apt-get install curl -y
+sudo apt-get install wget -y
+sudo wget -qO- https://get.docker.com/ | sh 
+sudo apt-get update
+sudo apt-get install git -y
+sudo apt-get install curl -y
+sudo apt-get install wget -y
+sudo wget -qO- https://get.docker.com/ | sh 
 sudo docker pull zdong/hadoop:latest
 ```
 
