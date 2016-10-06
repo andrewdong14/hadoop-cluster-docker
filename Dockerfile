@@ -9,16 +9,13 @@ RUN apt-get update && apt-get install -y openssh-server openjdk-7-jdk wget
 
 # install hadoop
 ENV HADOOP_VERSION 2.7.3
-RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y wget libzip2 libsnappy1 libssl-dev && \
-    wget http://archive.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz && \
-    apt-get remove -y wget && \
-    rm -rf /var/lib/apt/lists/* && \
-    tar -zxf /hadoop-$HADOOP_VERSION.tar.gz && \
-    rm /hadoop-$HADOOP_VERSION.tar.gz && \
-    mv hadoop-$HADOOP_VERSION /usr/local/hadoop && \
-    mkdir -p /usr/local/hadoop/logs
 
+RUN wget http://archive.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz && \
+    tar -xzvf hadoop-$HADOOP_VERSION.tar.gz && \
+    mv hadoop-$HADOOP_VERSION /usr/local/hadoop && \
+    rm hadoop-$HADOOP_VERSION.tar.gz
+	
+	
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64 
 ENV HADOOP_HOME=/usr/local/hadoop 
