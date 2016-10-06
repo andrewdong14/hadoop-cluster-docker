@@ -9,7 +9,7 @@
 #####1. pull docker image
 
 ```
-sudo docker pull zdong/hadoop:2.7.3
+sudo docker pull zdong/hadoop:latest
 ```
 
 #####2. clone github repository
@@ -69,7 +69,7 @@ Hadoop    1
 Hello    2
 ```
 
-### Section B: setup a hadoop cluster with arbitrary size
+### Section B: setup a hadoop cluster with arbitrary number of nodes
 
 #####1. pull docker images and clone github repository
 
@@ -94,4 +94,17 @@ sudo ./start-container.sh 5
 #####4. run hadoop cluster 
 
 do 5~6 like section A
+
+### Section C: access hadoop to run your own task
+After you run section A or B, you can open another another linux terminal to run your tasks.
+#####1. login to master node
+```
+sudo docker exec -it hadoop-master /bin/bash
+```
+
+#####2. invoke hadoop
+please reference [run-wordcount.sh](https://github.com/andrewdong14/hadoop-cluster-docker/blob/master/config/run-wordcount.sh) to learn how to run the hadoop task. You also can check hadoop help:
+```
+hadoop --help
+```
 
