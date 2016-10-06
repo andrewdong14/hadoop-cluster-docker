@@ -3,7 +3,7 @@
 ![alt tag](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/hadoop-cluster-docker.png)
 
 
-###3 Nodes Hadoop Cluster
+###3-nodes Hadoop Cluster
 
 #####1. pull docker image
 
