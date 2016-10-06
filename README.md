@@ -96,8 +96,9 @@ sudo ./start-container.sh 5
 do 5~6 like section A
 
 ### Section C: access hadoop to run your own task
-After you run section A or B, you can open another another linux terminal to run your tasks.
+
 #####1. login to master node
+After you run section A or B, you can open another another linux terminal to run your tasks.
 ```
 sudo docker exec -it hadoop-master /bin/bash
 ```
