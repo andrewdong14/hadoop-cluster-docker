@@ -1,9 +1,10 @@
 ##Run Hadoop Cluster within Docker Containers
 
-![alt tag](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/hadoop-cluster-docker.png)
+
+![](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/hadoop-cluster-docker.png)
 
 
-###3-nodes Hadoop Cluster
+### Section A: setup a hadoop cluster with 3 nodes 
 
 #####1. pull docker image
 
@@ -68,7 +69,7 @@ Hadoop    1
 Hello    2
 ```
 
-###Arbitrary size Hadoop cluster
+### Section B: setup a hadoop cluster with arbitrary size
 
 #####1. pull docker images and clone github repository
 
