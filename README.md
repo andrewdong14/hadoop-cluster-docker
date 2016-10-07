@@ -16,9 +16,10 @@ sudo apt-get install git -y
 sudo apt-get install curl -y
 sudo apt-get install wget -y
 sudo wget -qO- https://get.docker.com/ | sh 
-# get the latest hadoop image. The details of this docker image is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
+# get the latest hadoop image. 
 sudo docker pull zdong/hadoop:latest
 ```
+The details of this docker image is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
 
 #####2. clone github repository
 
