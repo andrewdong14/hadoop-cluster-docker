@@ -19,7 +19,7 @@ sudo wget -qO- https://get.docker.com/ | sh
 # get the latest hadoop image. 
 sudo docker pull zdong/hadoop:latest
 ```
-The details of this docker image is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
+The details of this [zdong/hadoop docker image](https://hub.docker.com/r/zdong/hadoop/) is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
 
 #####2. clone github repository
 
