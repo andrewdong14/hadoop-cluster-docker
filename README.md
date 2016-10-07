@@ -56,7 +56,7 @@ root@hadoop-master:~#
 ```
 ./start-hadoop.sh
 ```
-
+Now, you could access hadoop web monitor from http://yourhostname:50070/ or http://localhost:50070/
 #####6. run wordcount
 
 ```
