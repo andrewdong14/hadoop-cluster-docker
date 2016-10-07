@@ -8,6 +8,7 @@
 
 #####1. install the docker and pull docker image
 
+Please make sure you have installed Ubuntu on your machine or virtual machine. The machine has at least 6GB memory.
 ```
 sudo apt-get update
 sudo apt-get install git -y
@@ -109,7 +110,7 @@ sudo docker exec -it hadoop-master /bin/bash
 ```
 
 #####2. invoke hadoop
-please reference [run-wordcount.sh](https://github.com/andrewdong14/hadoop-cluster-docker/blob/master/config/run-wordcount.sh) to learn how to run the hadoop task. You also can check hadoop help:
+please reference [run-wordcount.sh](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/config/run-wordcount.sh) to learn how to run the hadoop task. You also can check hadoop help:
 ```
 hadoop --help
 ```
