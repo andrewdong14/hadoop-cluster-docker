@@ -10,11 +10,13 @@
 
 Please make sure you have installed Ubuntu on your machine or virtual machine. The machine has at least 6GB memory.
 ```
+# install these software if you not have them on your machine.
 sudo apt-get update
 sudo apt-get install git -y
 sudo apt-get install curl -y
 sudo apt-get install wget -y
 sudo wget -qO- https://get.docker.com/ | sh 
+# get the latest hadoop image. The details of this docker image is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
 sudo docker pull zdong/hadoop:latest
 ```
 
