@@ -4,25 +4,26 @@
 ![](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/hadoop-cluster-docker.png)
 
 
-### Section A: setup a hadoop cluster with 3 nodes 
+### Section A: setup a hadoop cluster with 3 nodes
 
 #####1. install the docker and pull docker image
 
-Please make sure you have installed Ubuntu on your machine or virtual machine. The machine has at least 6GB memory.
+Please make sure you have installed Ubuntu 14.04 or late version on your machine or virtual machine. The machine has at least 3GB memory if you want to run a 3-nodes cluster or 5GB if you want to run a 5-node cluster.
 ```
 # install these software if you not have them on your machine.
 sudo apt-get update
 sudo apt-get install git -y
 sudo apt-get install curl -y
 sudo apt-get install wget -y
-sudo wget -qO- https://get.docker.com/ | sh 
-# get the latest hadoop image. 
+sudo wget -qO- https://get.docker.com/ | sh
+# get the latest hadoop image.
 sudo docker pull zdong/hadoop:latest
 ```
-The details of this [zdong/hadoop docker image](https://hub.docker.com/r/zdong/hadoop/) is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile). 
+This docker image zdong/hadoop has included latest Hadoop, Open JDK 1.7 and other necessary software. The details of this [zdong/hadoop docker image](https://hub.docker.com/r/zdong/hadoop/) is defined in [Dockfile](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/Dockerfile).
 
 #####2. clone github repository
 
+Get the scripts for starting docker instances in your local machine.
 ```
 git clone https://github.com/andrewdong14/hadoop-cluster-docker
 ```
@@ -46,7 +47,7 @@ sudo ./start-container.sh
 start hadoop-master container...
 start hadoop-slave1 container...
 start hadoop-slave2 container...
-root@hadoop-master:~# 
+root@hadoop-master:~#
 ```
 - start 3 containers with 1 master and 2 slaves
 - you will get into the /root directory of hadoop-master container
@@ -100,7 +101,7 @@ sudo ./start-container.sh 5
 ```
 - use the same parameter as the step 2
 
-#####4. run hadoop cluster 
+#####4. run hadoop cluster
 
 do 5~6 like section A
 
@@ -117,4 +118,3 @@ please reference [run-wordcount.sh](https://raw.githubusercontent.com/andrewdong
 ```
 hadoop --help
 ```
-
