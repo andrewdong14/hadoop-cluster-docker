@@ -2,7 +2,12 @@
 
 # test the hadoop cluster by running wordcount
 
+# delete 
+
+--ignore-fail-on-non-empty
+
 # create input files 
+rm -rf input
 mkdir input
 echo "Macquarie MRes COMP777 S22016" >input/file1.txt
 echo "Macquarie MRes S22016" >input/file2.txt
@@ -11,6 +16,8 @@ echo "Macquarie Young Choon Lee" >input/file4.txt
 echo "S22016 Young Choon" >input/file5.txt
 
 
+# delete input directory on HDFS if exists
+hadoop fs -rmdir --ignore-fail-on-non-empty input
 # create input directory on HDFS
 hadoop fs -mkdir -p input
 
