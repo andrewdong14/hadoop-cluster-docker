@@ -42,7 +42,7 @@ RUN mv /tmp/ssh_config ~/.ssh/config && \
     mv /tmp/runWC.sh ~/runWC.sh
 
 RUN chmod +x ~/start-hadoop.sh && \
-    chmod +x ~/run-wordcount.sh && \
+    chmod +x ~/runWC.sh && \
     chmod +x $HADOOP_HOME/sbin/start-dfs.sh && \
     chmod +x $HADOOP_HOME/sbin/start-yarn.sh 
 
