@@ -61,22 +61,36 @@ Now, you could access hadoop web monitor from http://yourhostname:50070/ or http
 #####6. run wordcount
 
 ```
-./run-wordcount.sh
+./runWC.sh
 ```
 
 **output**
 
 ```
 input file1.txt:
-Hello Hadoop
+Macquarie MRes COMP777 S22016
 
 input file2.txt:
-Hello Docker
+Macquarie MRes S22016
+
+input file3.txt:
+COMP777 Young
+
+input file4.txt:
+Macquarie Young Choon Lee
+
+input file5.txt:
+S22016 Young Choon
 
 wordcount output:
-Docker    1
-Hadoop    1
-Hello    2
+COMP777 2
+Choon   2
+Lee     1
+MRes    2
+Macquarie       3
+S22016  3
+Young   3
+
 ```
 
 ### Section B: setup a hadoop cluster with arbitrary number of nodes
