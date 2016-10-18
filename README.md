@@ -8,7 +8,7 @@
 
 #####1. install the docker and pull docker image
 
-Please make sure you have installed Ubuntu 14.04 or late version on your machine or virtual machine. The machine has at least 3GB memory if you want to run a 3-nodes cluster or 5GB if you want to run a 5-node cluster.
+Please make sure you have installed Ubuntu 14.04 or late version on your machine or virtual machine. Please make sure the machine/virtual machine has at least 3GB memory if you want to run a 3-nodes cluster or has at least 5GB if you want to run a 5-nodes cluster.
 ```
 # install these software if you not have them on your machine.
 sudo apt-get update
@@ -114,7 +114,7 @@ sudo docker exec -it hadoop-master /bin/bash
 ```
 
 #####2. invoke hadoop
-please reference [run-wordcount.sh](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/config/run-wordcount.sh) to learn how to run the hadoop task. You also can check hadoop help:
+please reference [runWC.sh](https://raw.githubusercontent.com/andrewdong14/hadoop-cluster-docker/master/config/runWC.sh) to learn how to run the hadoop task. You also can check hadoop help:
 ```
 hadoop --help
 ```
