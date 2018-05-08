@@ -68,27 +68,27 @@ Now, you could access hadoop web monitor from http://yourhostname:50070/ or http
 
 ```
 input file1.txt:
-Macquarie MRes COMP777 S22016
+Macquarie Ugrad COMP335 S12018
 
 input file2.txt:
-Macquarie MRes S22016
+Macquarie Ugrad S12018
 
 input file3.txt:
-COMP777 Young
+COMP335 Young
 
 input file4.txt:
 Macquarie Young Choon Lee
 
 input file5.txt:
-S22016 Young Choon
+S12018 Young Choon
 
 wordcount output:
-COMP777 2
+COMP335 2
 Choon   2
 Lee     1
-MRes    2
+Ugrad   2
 Macquarie       3
-S22016  3
+S12018  3
 Young   3
 
 ```

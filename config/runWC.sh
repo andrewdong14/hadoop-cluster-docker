@@ -4,11 +4,11 @@
 
 # create input files 
 mkdir input
-echo "Macquarie MRes COMP777 S22016" >input/file1.txt
-echo "Macquarie MRes S22016" >input/file2.txt
-echo "COMP777 Young" >input/file3.txt
+echo "Macquarie Ugrad COMP335 S12018" >input/file1.txt
+echo "Macquarie Ugrad S12018" >input/file2.txt
+echo "COMP335 Young" >input/file3.txt
 echo "Macquarie Young Choon Lee" >input/file4.txt
-echo "S22016 Young Choon" >input/file5.txt
+echo "S12018 Young Choon" >input/file5.txt
 
 
 # create input directory on HDFS
